@@ -1,77 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <title>Chamb - Responsive E-commerce HTML5 Template</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!--enable mobile device-->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--fontawesome css-->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <!--bootstrap css-->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!--animate css-->
-      <link rel="stylesheet" href="css/animate-wow.css">
-      <!--main css-->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/bootstrap-select.min.css">
-      <link rel="stylesheet" href="css/slick.min.css">
-      <!--responsive css-->
-      <link rel="stylesheet" href="css/responsive.css">
+   {% include "bases/header.html" %}
    </head>
    <body>
       <header id="header" class="top-head">
          <!-- Static navbar -->
          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-4 col-sm-12 left-rs">
-                     <div class="navbar-header">
-                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
-                        <span class="sr-only">Toggle navigation</span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        </button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
-                     </div>
-                     <form class="navbar-form navbar-left web-sh">
-                        <div class="form">
-                           <input type="text" class="form-control" placeholder="Search for products or companies">
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-md-8 col-sm-12">
-                     <div class="right-nav">
-                        <div class="login-sr">
-                           <div class="login-signup">
-                              <ul>
-                                 <li><a href="#">Login</a></li>
-                                 <li><a class="custom-b" href="#">Sign up</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="help-r hidden-xs">
-                           <div class="help-box">
-                              <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
-                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="nav-b hidden-xs">
-                           <div class="nav-box">
-                              <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
-                                 <li><a href="about-us.html">Chamb for Business</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!--/.container-fluid --> 
+               {% include "bases/nav.html" %}
+            <!--/.container-fluid -->
          </nav>
       </header>
       <!-- Modal -->
@@ -93,11 +30,7 @@
          </div>
       </div>
       <div id="sidebar" class="top-nav">
-         <ul id="sidebar-nav" class="sidebar-nav">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Chamb for Business</a></li>
-         </ul>
+        {% include "bases/topnav.html" %}
       </div>
       <div class="section-how-it-works">
          <div class="container">
@@ -128,12 +61,12 @@
                            </div>
                            <h3>Sign up</h3>
                            <h2><span>Small or big,</span><br> we have the solution.</h2>
-                           <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                              voluptatem accusantium doloremque laudantium rem aperiam, 
-                              eaque ipsa quae ab illo inventore veritatis et quasi 
+                           <p>Sed ut perspiciatis unde omnis iste natus error sit
+                              voluptatem accusantium doloremque laudantium rem aperiam,
+                              eaque ipsa quae ab illo inventore veritatis et quasi
                               architecto beatae vitae dicta sunt explicabo.
                            </p>
-                           <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                           <p>laudantium rem aperiam, eaque ipsa quae ab illo
                               inventore veritatis
                            </p>
                            <div class="line"></div>
@@ -147,12 +80,12 @@
                            </div>
                            <h3>Search</h3>
                            <h2>We revolutionized <br> <span>searching.</span></h2>
-                           <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                           <p>laudantium rem aperiam, eaque ipsa quae ab illo
                               inventore veritatis
                            </p>
-                           <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                              voluptatem accusantium doloremque laudantium rem aperiam, 
-                              eaque ipsa quae ab illo inventore veritatis et quasi 
+                           <p>Sed ut perspiciatis unde omnis iste natus error sit
+                              voluptatem accusantium doloremque laudantium rem aperiam,
+                              eaque ipsa quae ab illo inventore veritatis et quasi
                               architecto beatae vitae dicta sunt explicabo.
                            </p>
                            <div class="line"></div>
@@ -166,12 +99,12 @@
                            </div>
                            <h3>Contact & buy</h3>
                            <h2>Contact sellers <br>and <span>start buying</span></h2>
-                           <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                              voluptatem accusantium doloremque laudantium rem aperiam, 
-                              eaque ipsa quae ab illo inventore veritatis et quasi 
+                           <p>Sed ut perspiciatis unde omnis iste natus error sit
+                              voluptatem accusantium doloremque laudantium rem aperiam,
+                              eaque ipsa quae ab illo inventore veritatis et quasi
                               architecto beatae vitae dicta sunt explicabo.
                            </p>
-                           <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                           <p>laudantium rem aperiam, eaque ipsa quae ab illo
                               inventore veritatis
                            </p>
                         </div>
@@ -189,12 +122,12 @@
                      <h2>Streamlined<br>
                         Communication Systems.
                      </h2>
-                     <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                     <p>laudantium rem aperiam, eaque ipsa quae ab illo
                         inventore veritatis
                      </p>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                        voluptatem accusantium doloremque laudantium rem aperiam, 
-                        eaque ipsa quae ab illo inventore veritatis et quasi 
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
                         architecto beatae vitae dicta sunt explicabo.
                      </p>
                   </div>
@@ -216,12 +149,12 @@
                      <h2>Powerful search tools <br>
                         for finding products.
                      </h2>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                        voluptatem accusantium doloremque laudantium rem aperiam, 
-                        eaque ipsa quae ab illo inventore veritatis et quasi 
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
                         architecto beatae vitae dicta sunt explicabo.
                      </p>
-                     <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                     <p>laudantium rem aperiam, eaque ipsa quae ab illo
                         inventore veritatis
                      </p>
                   </div>
@@ -233,12 +166,12 @@
                      <h2>Find Exciting and Exotic
                         Products.
                      </h2>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit 
-                        voluptatem accusantium doloremque laudantium rem aperiam, 
-                        eaque ipsa quae ab illo inventore veritatis et quasi 
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
                         architecto beatae vitae dicta sunt explicabo.
                      </p>
-                     <p>laudantium rem aperiam, eaque ipsa quae ab illo 
+                     <p>laudantium rem aperiam, eaque ipsa quae ab illo
                         inventore veritatis
                      </p>
                   </div>
@@ -263,7 +196,7 @@
                         <img src="images/icon-b1.png" alt="" />
                      </div>
                      <h3>Branden Minisite</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -274,7 +207,7 @@
                         <img src="images/icon-b2.png" alt="" />
                      </div>
                      <h3>Vetted Sellers</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -285,7 +218,7 @@
                         <img src="images/icon-b3.png" alt="" />
                      </div>
                      <h3>Verified with 3. part</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -296,7 +229,7 @@
                         <img src="images/icon-b4.png" alt="" />
                      </div>
                      <h3>Data Protection</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -307,7 +240,7 @@
                         <img src="images/icon-b5.png" alt="" />
                      </div>
                      <h3>Support</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -318,7 +251,7 @@
                         <img src="images/icon-b1.png" alt="" />
                      </div>
                      <h3>Branden Minisite</h3>
-                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
+                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms
                         of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound.
                      </p>
                   </div>
@@ -561,14 +494,14 @@
             </div>
          </div>
       </footer>
-      <!--main js--> 
-      <script src="js/jquery-1.12.4.min.js"></script> 
-      <!--bootstrap js--> 
-      <script src="js/bootstrap.min.js"></script> 
+      <!--main js-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <!--bootstrap js-->
+      <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap-select.min.js"></script>
-      <script src="js/slick.min.js"></script> 
-      <script src="js/wow.min.js"></script> 
-      <!--custom js--> 
+      <script src="js/slick.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!--custom js-->
       <script src="js/custom.js"></script>
    </body>
 </html>

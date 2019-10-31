@@ -1,77 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <title>Chamb - Responsive E-commerce HTML5 Template</title>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!--enable mobile device-->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--fontawesome css-->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <!--bootstrap css-->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!--animate css-->
-      <link rel="stylesheet" href="css/animate-wow.css">
-      <!--main css-->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/bootstrap-select.min.css">
-      <link rel="stylesheet" href="css/slick.min.css">
-      <!--responsive css-->
-      <link rel="stylesheet" href="css/responsive.css">
+     {% include "bases/header.html" %}
    </head>
    <body>
       <header id="header" class="top-head">
          <!-- Static navbar -->
          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-4 col-sm-12 left-rs">
-                     <div class="navbar-header">
-                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
-                        <span class="sr-only">Toggle navigation</span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span> 
-                        </button>
-                        <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="" /></a>
-                     </div>
-                     <form class="navbar-form navbar-left web-sh">
-                        <div class="form">
-                           <input type="text" class="form-control" placeholder="Search for products or companies">
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-md-8 col-sm-12">
-                     <div class="right-nav">
-                        <div class="login-sr">
-                           <div class="login-signup">
-                              <ul>
-                                 <li><a href="#">Login</a></li>
-                                 <li><a class="custom-b" href="#">Sign up</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="help-r hidden-xs">
-                           <div class="help-box">
-                              <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
-                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="nav-b hidden-xs">
-                           <div class="nav-box">
-                              <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
-                                 <li><a href="about-us.html">Chamb for Business</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!--/.container-fluid --> 
+             {% include "bases/nav.html" %}
+            <!--/.container-fluid -->
          </nav>
       </header>
       <!-- Modal -->
@@ -93,11 +30,7 @@
          </div>
       </div>
       <div id="sidebar" class="top-nav">
-         <ul id="sidebar-nav" class="sidebar-nav">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Chamb for Business</a></li>
-         </ul>
+    {% include "bases/topnav.html" %}
       </div>
       <div class="main-template-about">
          <div class="section-gradient">
@@ -132,19 +65,19 @@
                      <div class="does-box">
                         <div class="panel-body">
                            <h2>What Does Chamb Do</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                            </p>
-                           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+                           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                               voluptatem quia dolore magnam aliquam quaerat voluptatem.
                            </p>
-                           <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                              consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel 
+                           <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                              consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
                               illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                            </p>
-                           <p>We took it upon ourselves to change that. We developed a burning desire to create something to bridge the chasms between 
-                              businesses across country and continent. So, with a goal in mind, a skilled team at hand, Chamb sprung forth: the website 
+                           <p>We took it upon ourselves to change that. We developed a burning desire to create something to bridge the chasms between
+                              businesses across country and continent. So, with a goal in mind, a skilled team at hand, Chamb sprung forth: the website
                               that helps discover and build profitable long-lasting networks amongst businesses around the world.
                            </p>
                         </div>
@@ -159,19 +92,19 @@
                <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                      <h2>Why Create Chamb</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                      </p>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                         voluptatem quia dolore magnam aliquam quaerat voluptatem.
                      </p>
-                     <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi 
-                        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel 
+                     <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
                         illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
                      </p>
-                     <p>We took it upon ourselves to change that. We developed a burning desire to create something to bridge the chasms between 
-                        businesses across country and continent. So, with a goal in mind, a skilled team at hand, Chamb sprung forth: the website 
+                     <p>We took it upon ourselves to change that. We developed a burning desire to create something to bridge the chasms between
+                        businesses across country and continent. So, with a goal in mind, a skilled team at hand, Chamb sprung forth: the website
                         that helps discover and build profitable long-lasting networks amongst businesses around the world.
                      </p>
                   </div>
@@ -364,14 +297,14 @@
             </div>
          </div>
       </footer>
-      <!--main js--> 
-      <script src="js/jquery-1.12.4.min.js"></script> 
-      <!--bootstrap js--> 
-      <script src="js/bootstrap.min.js"></script> 
+      <!--main js-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <!--bootstrap js-->
+      <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap-select.min.js"></script>
-      <script src="js/slick.min.js"></script> 
+      <script src="js/slick.min.js"></script>
       <script src="js/wow.min.js"></script>
-      <!--custom js--> 
+      <!--custom js-->
       <script src="js/custom.js"></script>
    </body>
 </html>
